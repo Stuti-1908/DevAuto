@@ -5,10 +5,11 @@
     <title>Sample App</title>
 </head>
 <body>
-    <input id="my_input" type="text" placeholder="Type something..." />
+    <input id="my-input" type="text" placeholder="Type something..." />
     <button id="my-button">Click Me</button>
     <div id="output"></div>
     <script>
+
         document.getElementById('my-button').onclick = function() {
             const val = document.getElementById('my-input').value;
             document.getElementById('output').innerText = 'You typed: ' + val;
