@@ -9,11 +9,12 @@
     <button id="my-button">Click Me</button>
     <div id="output"></div>
     <script>
-
-        document.getElementById('my-button').onclick = function() {
-            const val = document.getElementById('my-input').value;
-            document.getElementById('output').innerText = 'You typed: ' + val;
-        }
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('my-button').onclick = function() {
+                const val = document.getElementById('my-input').value;
+                document.getElementById('output').innerText = 'You typed: ' + val;
+            }
+        })
     </script>
 </body>
 </html>
