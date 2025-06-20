@@ -8,13 +8,15 @@
     <h1>Home</h1>
     <!-- Shared selector (for cross-page scenario testing) -->
     <input id="shared_input" type="text" placeholder="Shared input on home" />
-    <input id="my-input" type="text" placeholder="Type something..." />
+    <input id="my_input" type="text" placeholder="Type something..." />
     <button id="my_button">Click Me</button>
     <div id="output"></div>
+    <!-- Add a class-based selector for automation testing -->
+    <div class="copilot-bot">Hello, I am GitHub Copilot, your AI assistant!</div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('my_button').onclick = function() {
-                const val = document.getElementById('my-input').value;
+                const val = document.getElementById('my_input').value;
                 document.getElementById('output').innerText = 'You typed: ' + val;
             }
         });
